@@ -12,7 +12,18 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	var buscar= recipesArray;
+	for(i=0; i<= buscar.length; i++){
+
+		if( buscar == buscar.hasOwnProperty('highlighted') ) {
+			return true;
+		}
+		renderRecipe(buscar);
+	}
 }
+renderHighlightedRecipes();
+   
+
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
