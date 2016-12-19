@@ -42,4 +42,24 @@ function renderActivity(recipe) {
 	
 }
 
+/*función esconder flecha ejercicio uno
+function esconder(){
+	document.getElementById("js-back").style.display= 'none';
+}
+esconder();
+body.onload = function esconder(){
+	document.getElementById("pbocul").style.display= 'none';
+}
+esconder();*/
+
+ 
+
+/*función esconder flecha ejercicio uno*/
+
+ function esconder(){
+   
+	var ocul= document.getElementById("oculflecha");
+	ocul.style.display= "none";
+}
+esconder();
 

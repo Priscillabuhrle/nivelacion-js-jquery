@@ -24,9 +24,9 @@
           <a class="nav-item js-back" href="#">
             <span class="icon-arrow-left-alt"></span>
           </a>
-          
-          <a class="nav-item js-menu" href="#"><span class="icon-menu"></span></a>
-          
+          <div id="oculmenu">
+              <a class="nav-item js-menu" href="#"><span class="icon-menu"></span></a>
+          </div>
         </div>
 
         <div class="title-page">
@@ -76,6 +76,13 @@
 
 
     </div>
+    <script type="text/javascript">
+      function esconderDos(){ 
+         var ocult= document.getElementById("oculmenu");
+         ocult.style.display= "none";
+      }
+      esconderDos();
+    </script>
  
     <!--JS FILES-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
