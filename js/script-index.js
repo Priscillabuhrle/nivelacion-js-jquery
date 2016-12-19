@@ -10,18 +10,19 @@ $(document).ready( function(){
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
-function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
+/*function renderHighlightedRecipes(recipesArray) {
+	
 	var buscar= recipesArray;
-	for(i=0; i<= buscar.length; i++){
+	for(var i=0; i< buscar.length ; i++){
 
-		if( buscar == buscar.hasOwnProperty('highlighted') ) {
+		if( buscar == buscar.hasOwnProperty("highlighted") ) {
 			return true;
+			console.log('Recipes: ', recipesArray);
 		}
 		renderRecipe(buscar);
 	}
 }
-renderHighlightedRecipes();
+renderHighlightedRecipes(recipesArray);*/
    
 
 
@@ -31,19 +32,27 @@ renderHighlightedRecipes();
 * Aqui se tiene que crear el HTML que esta en el 
 * archivo "templates/templates-recipe.html"
 */
-function renderRecipe(recipe) {
-	console.log('Voy a pintar la receta: ', recipe);
+ /*function renderRecipe(recipe) {
+  console.log('Voy a pintar la receta: ', recipe);
+  var divMadre= document.getElementByClassName("list-recipes");
+  var atribTitulo= document.getAttribute("title");
+  var atribAutor = document.getAttribute("source.name");
+  /*lo inserto en el html
+  divMadre.appendChild(atribTitulo);
+  divMadre.appendChild(atribAutor);
 }
+renderRecipe(recipe);*/
 
 
 
 /*
 * Función que se encarga de pintar todas las actividades
 */
-function renderActivities(activitiesArray) {
-	console.log('Activities: ', activitiesArray);
+/* se copio la funcion y se agrego en un script en el html línea 81, para ver si funcionaba
+ onload= function renderActivities(activitiesArray) {
+  console.log('Activities: ', activitiesArray);
 }
-
+renderActivities(activitiesArray);*/
 /*
 * Función que se encarga de pintar una actividad
 * Aqui se tiene que crear el HTML que esta en el 

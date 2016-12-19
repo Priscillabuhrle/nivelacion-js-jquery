@@ -78,7 +78,15 @@
           <!-- AQUI SE TIENE QUE VER LA LISTA DE RECETAS -->
 
         </div>
-
+        <script type="text/javascript">
+           onload= function renderActivities(activitiesArray) {
+                  console.log('Activities: ', activitiesArray);
+                  for(var i=0; i<activitiesArray.length ; i++){
+                     renderActivities(activitiesArray[i]);
+                  }
+                 }
+           renderActivities(activitiesArray);
+        </script>
         <a href="#" class="btn-primary">Explore all our recipes</a>
       </div>
 
