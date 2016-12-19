@@ -63,3 +63,11 @@ esconder();*/
 }
 esconder();
 
+/* ejercicio dos, pintar taxto */
+function printNews(){
+	var cajaTexto=document.getElementById("agregarTexto");
+	var crearnodotexto=document.createTextNode("Nuevas Recetas");
+	cajaTexto.appendChild(crearnodotexto);
+}
+printNews();
+
